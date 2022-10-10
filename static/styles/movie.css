@@ -1,0 +1,55 @@
+.textbox{
+	width: 100%;
+	padding: 10px;
+}
+
+
+::placeholder{
+	color: darkred;
+}
+
+.btnn{
+    width: 100%;   
+    border: none;
+    padding: 5px 10px;
+    margin-left: 8px ;
+    font-size: 16px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    background: #e50914;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.file{
+	display: none;
+	
+
+}
+.msg{
+	font-size: 1.5rem;
+}
+
+.flex{
+	display:inline-block;
+}
+
+
+
+
+
+
+label{
+	cursor: pointer;
+	font-size: 2px;
+	color: darkred;
+	border: 1px solid white;
+	display: inline-block;
+	padding: 4px 20px;
+	width: 93.5%;
+	height: 80%;
+	background-color: white;
+}
+

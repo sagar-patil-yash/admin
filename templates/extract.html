@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EXTRACT FRAME</title>
+    <meta name="description" content="This is a frontend  - Watch showstoppers movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href= "{{ url_for('static',filename='styles/global.css')}}">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/landing-pages.css')}}">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/movie.css')}}">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='styles/style5.css')}}">
+</head>
+<body>
+ <style>
+        body::before{
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.9) 100%),url({{ url_for('static',filename='styles/bg.png')}});
+
+        }
+    </style>
+    <!-- index page block start | main landing page home | -->
+
+    <main style="padding: 0px 10px;">
+        <header class="d-flex space-between middle-align">
+           <a href="/">
+            <img src="{{ url_for('static',filename='styles/logo1.png')}}" height="50px" width="170px" alt="site logo main" style="margin: auto;">
+        </a>
+        </header>
+
+        <section id="login-form-section sec">
+            <!--Login form start-->
+
+                <div class="loginContainer d-flex direction-column">
+                    <h5 align="center"><strong>EXTRACT FRAMES</strong></h5>
+                    <h2 class="formtitle">
+                        <div class="msg">{{msg}}</div>
+                    </h2>
+<h2 class="word">
+				<form action = "{{ url_for('ext') }}" method = "POST"
+         enctype = "multipart/form-data">
+					<input id="Moid" name="Moid" type="text" placeholder="Enter Movie Id" class="textbox"/>
+                    <label><span>SELECT MOVIE</span><input type = "file" name = "file" class="file" /></label>
+         <div class="flex jc">
+         <input type="submit" class="btnn ugh" value="GET FRAMES"></form>
+      </form>
+      </div>
+    </section>
+</main>
+</body>
+
+</html>
